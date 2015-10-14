@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Pen by  Justin Ferrier</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body>
+
+<nav id="header" role="navigation" class="navbar navbar-static-top navbar-default no-print">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#">
+        <img style="width: 200px;" src="https://upload.wikimedia.org/wikipedia/en/7/77/League_of_Legends_logo.png" alt="League Website"/>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#">Patch Notes</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Leaderboard
+          </a>
+          <ul class="dropdown-menu dropdown-menu-left">
+            <li>
+              <a href="#">Solo Queue</a>
+            </li>
+            <li>
+              <a href="#">5v5</a>
+            </li>
+            <li>
+              <a href="#">3v3</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Hero Details
+          </a>
+          <ul class="dropdown-menu dropdown-menu-left">
+            <li>
+              <a href="#">Draft Helper</a>
+            </li>
+            <li>
+              <a href="#">Team Compositions</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-search"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" style="padding:10px;"></div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="body" class="container">
+  <section class="content-wrapper main-content clear-fix">
+    <hgroup class="title">
+      <h1 class="section-title">Team Draft Helper</h1>
+    </hgroup>
+    <a href="#" class="TeamDraftInfo btn btn-info">
+      <i class="fa fa-question"></i>
+      Info
+    </a>
+    <select style="font-size: X-Large;">
+      <option value="Solo Queue">Solo Queue</option>
+      <option value="Ranked 5v5">Ranked 5v5</option>
+      <option value="Ranked 3v3">Ranked 3v3</option>
+    </select>
+    <select style="font-size: X-Large;">
+      <option value="-1">All Leagues</option>
+      <option value="0">Bronze+</option>
+      <option value="1">Silver+</option>
+      <option value="2">Gold+</option>
+      <option value="3">Platinum+</option>
+      <option value="4">Diamond+</option>
+      <option value="5">Master+</option>
+      <option value="6">Challenger</option>
+    </select>
+    <div id="SelectHeroContainer">
+      <p id="SelectHeroContainerText" style="display: block;">
+        Click or<br>Drag and Drop Champion
+      </p>
+      <ul id="SelectHeroes" class="connectedSortable ui-sortable"></ul>
+    </div>
+    <ul id="AvailableChamps" class="connectedSortable ui-sortable">
+      <li data-hero="Amumu" class="ui-state-default" style="background-color: rgb(106,255,0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Amumu.png" /><p>53.7</p></li>
+      <li data-hero="Malzahar" class="ui-state-default" style="background-color: rgb(122, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Malzahar.png" /><p>53.6</p></li>
+      <li data-hero="Lux" class="ui-state-default" style="background-color: rgb(130, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Lux.png" /><p>53.3</p></li>
+      <li data-hero="Wukong" class="ui-state-default" style="background-color: rgb(144, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//MonkeyKing.png" /><p>53.2</p></li>
+      <li data-hero="Veigar" class="ui-state-default" style="background-color: rgb(159, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Veigar.png" /><p>52.9</p></li>
+      <li data-hero="Ahri" class="ui-state-default" style="background-color: rgb(159, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Ahri.png" /><p>52.9</p></li>
+      <li data-hero="Skarner" class="ui-state-default" style="background-color: rgb(167, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Skarner.png" /><p>52.7</p></li>
+      <li data-hero="Garen" class="ui-state-default" style="background-color: rgb(167, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Garen.png" /><p>52.7</p></li>
+      <li data-hero="Blitzcrank" class="ui-state-default" style="background-color: rgb(198, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Blitzcrank.png" /><p>52.6</p></li>
+      <li data-hero="Brand" class="ui-state-default" style="background-color: rgb(198, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Brand.png" /><p>52.5</p></li>
+      <li data-hero="Rammus" class="ui-state-default" style="background-color: rgb(198, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Rammus.png" /><p>52.5</p></li>
+      <li data-hero="Heimerdinger" class="ui-state-default" style="background-color: rgb(198, 255, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Heimerdinger.png" /><p>52.5</p></li>
+      <li data-hero="Diana" class="ui-state-default" style="background-color: rgb(255, 113, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Diana.png" /><p>52.4</p></li>
+      <li data-hero="Malphite" class="ui-state-default" style="background-color: rgb(255, 64, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Malphite.png" /><p>52.3</p></li>
+      <li data-hero="Swain" class="ui-state-default" style="background-color: rgb(255, 18, 0);"><img src="http://ddragon.leagueoflegends.com/cdn/5.19.1/img/champion//Swain.png" /><p>52.3</p></li>
+    </ul>
+  </section>
+</div>
+<aside id="footer-widgets" class="no-print">
+  <div class="container">
+    <div class="row">
+      
+    </div>
+  </div>
+</aside>
+</body>
+    
+    
+    
+    
+    
+  </body>
+</html>
